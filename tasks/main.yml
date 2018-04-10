@@ -11,7 +11,7 @@
     state: installed
 
 - name: copy config script
-  copy: dest={{config_script_path}} owner=root group=root mode=644 src=defaultjdk8.sh
+  copy: dest={{config_script_path}} owner=root group=root mode=755 src=defaultjdk8.sh
 
 - name: config default java to jdk8
   shell: '{{config_script_path}}'
