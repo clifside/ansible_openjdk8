@@ -1,0 +1,17 @@
+---
+# tasks file for ansible_openjdk8__
+
+- name: install requirements
+  package: name={{ item }} state=installed
+  with_items: expect
+
+- name: install openjdk8
+  package:
+    name: java-1.8.0-openjdk
+    state: installed
+
+- name: copy config script
+  copy: dest={{supervisor_upstart_conf}} owner=root group=root mode=644 src=defaultjdk8.sh
+
+- name: config default java to jdk8
+  shell: '{{supervisor_upstart_conf}}'

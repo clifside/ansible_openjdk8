@@ -1,0 +1,4 @@
+---
+# defaults file for ansible_openjdk8__
+
+config_script_path: /root/defaultjdk8.sh

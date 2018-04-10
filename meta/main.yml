@@ -1,0 +1,20 @@
+galaxy_info:
+  author: Clifside
+  description: Clifside
+  company: Qunar
+
+  license: license (GPLv2, CC-BY, etc)
+
+  min_ansible_version: 1.7
+
+  platforms:
+
+  - name: RedHat
+    versions:
+    - all
+  categories:
+  - java
+  - openjdk
+  - jdk
+  - platform
+dependencies: []
