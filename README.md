@@ -22,7 +22,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: Clifside.defaultjdk8 }
+         - { role: clifside.openjdk8 }
 
 License
 -------
