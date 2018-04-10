@@ -11,7 +11,7 @@
     state: installed
 
 - name: copy config script
-  copy: dest={{supervisor_upstart_conf}} owner=root group=root mode=644 src=defaultjdk8.sh
+  copy: dest={{config_script_path}} owner=root group=root mode=644 src=defaultjdk8.sh
 
 - name: config default java to jdk8
-  shell: '{{supervisor_upstart_conf}}'
+  shell: '{{config_script_path}}'
